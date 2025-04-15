@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxi Michel - Service professionnel 24/7</title>
+  <meta name="description" content="Service de taxi à Toulouse disponible 24h/24 et 7j/7. Transferts aéroport, gare et longue distance. Chauffeurs professionnels et véhicules confortables.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Intégration du logo SVG directement dans le HTML -->
+  <style>
+    .inline-svg-logo {
+      height: 50px;
+      margin-right: 10px;
+    }
+    
+    /* Style pour les cartes sans images */
+    .service-card {
+      border-top: 5px solid var(--primary);
+    }
+    
+    .service-card-icon {
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 1em 0;
+      background-color: rgba(255, 193, 7, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <!-- Logo SVG intégré directement -->
+        <svg class="inline-svg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+          <!-- Fond transparent -->
+          <rect x="0" y="0" width="200" height="100" fill="none" />
+          
+          <!-- Carré arrondi avec dégradé subtil -->
+          <rect x="10" y="10" width="180" height="80" rx="8" fill="#222222" />
+          
+          <!-- Ligne jaune décorative -->
+          <rect x="10" y="30" width="180" height="3" fill="#ffc107" />
+          
+          <!-- Texte TAXI -->
+          <text x="25" y="60" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="#ffc107">TAXI</text>
+          
+          <!-- Texte MICHEL -->
+          <text x="95" y="60" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="#ffffff">MICHEL</text>
+          
+          <!-- Petit damier de taxi stylisé -->
+          <g transform="translate(170, 20) scale(0.4)">
+            <rect x="0" y="0" width="10" height="10" fill="#ffc107" />
+            <rect x="10" y="0" width="10" height="10" fill="#ffffff" />
+            <rect x="0" y="10" width="10" height="10" fill="#ffffff" />
+            <rect x="10" y="10" width="10" height="10" fill="#ffc107" />
+          </g>
+          
+          <!-- Slogan -->
+          <text x="100" y="80" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#cccccc" text-anchor="middle">Transport professionnel 24/7</text>
+        </svg>
+        <h1>Taxi Michel</h1>
+      </div>
+      <nav>
+        <a href="#accueil" class="active">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#apropos">À propos</a>
+        <a href="#toulouse">Toulouse</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <img src="img/hero-toulouse.jpg" alt="Taxi à Toulouse" class="hero-image">
+      <div class="hero-content">
+        <h2>Service de taxi professionnel à Toulouse</h2>
+        <p>Disponible 24h/24 et 7j/7 pour tous vos déplacements</p>
+        <a href="#contact" class="btn"><i class="fas fa-phone"></i> Réserver maintenant</a>
+      </div>
+    </section>
+
+    <section id="introduction" class="introduction">
+      <div class="intro-container">
+        <h2>Bienvenue chez Taxi Michel</h2>
+        <p class="intro-text">
+          Depuis plus de 15 ans, Taxi Michel offre des solutions de transport fiables et confortables à Toulouse et sa région. 
+          Que vous ayez besoin d'un transfert à l'aéroport, d'un déplacement professionnel ou personnel, notre équipe de chauffeurs expérimentés 
+          est à votre disposition pour vous garantir un trajet agréable et sécurisé.
+        </p>
+        <p class="intro-text">
+          Chez Taxi Michel, nous mettons un point d'honneur à offrir un service personnalisé et de qualité supérieure. 
+          Notre flotte de véhicules modernes et notre connaissance approfondie de la ville vous garantissent une expérience sans stress.
+        </p>
+        <div class="intro-stats">
+          <div class="stat-item fade-in">
+            <i class="fas fa-users"></i>
+            <h3>+10 000</h3>
+            <p>Clients satisfaits</p>
+          </div>
+          <div class="stat-item fade-in">
+            <i class="fas fa-car"></i>
+            <h3>15</h3>
+            <p>Véhicules à votre service</p>
+          </div>
+          <div class="stat-item fade-in">
+            <i class="fas fa-route"></i>
+            <h3>+500 000</h3>
+            <p>Kilomètres parcourus</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Nos services</h2>
+      <div class="services-grid">
+        <!-- Carte de service sans image : Transferts aéroport -->
+        <div class="service-card fade-in">
+          <div class="service-card-icon">
+            <i class="fas fa-plane"></i>
+          </div>
+          <div class="service-content">
+            <h3>Transferts aéroport & gare</h3>
+            <p>Service ponctuel et fiable pour tous vos déplacements vers l'aéroport Toulouse-Blagnac et la gare Matabiau. Suivi des vols en temps réel pour garantir votre prise en charge sans attente.</p>
+            <p><strong>Tarif fixe :</strong> à partir de 25€</p>
+          </div>
+        </div>
+        
+        <!-- Carte de service sans image : Courses en ville -->
+        <div class="service-card fade-in">
+          <div class="service-card-icon">
+            <i class="fas fa-taxi"></i>
+          </div>
+          <div class="service-content">
+            <h3>Courses en ville</h3>
+            <p>Déplacez-vous rapidement dans Toulouse et sa périphérie. Nos chauffeurs connaissent parfaitement la ville et ses raccourcis pour vous faire gagner un temps précieux, même aux heures de pointe.</p>
+            <p><strong>Réservation prioritaire :</strong> prise en charge en moins de 10 minutes</p>
+          </div>
+        </div>
+        
+        <!-- Carte de service sans image : Transport longue distance -->
+        <div class="service-card fade-in">
+          <div class="service-card-icon">
+            <i class="fas fa-road"></i>
+          </div>
+          <div class="service-content">
+            <h3>Transport longue distance</h3>
+            <p>Besoin de vous déplacer plus loin? Nos chauffeurs vous emmènent dans toute la région Occitanie et au-delà, en tout confort et sécurité. Forfaits spéciaux disponibles pour les trajets réguliers.</p>
+            <p><strong>Destinations populaires :</strong> Montpellier, Bordeaux, Andorre</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="features">
+      <h2>Pourquoi nous choisir ?</h2>
+      <div class="features-grid">
+        <div class="feature fade-in">
+          <i class="fas fa-clock"></i>
+          <h3>Disponible 24/7</h3>
+          <p>Service disponible à toute heure du jour et de la nuit pour répondre à vos besoins urgents ou planifiés à l'avance.</p>
+        </div>
+        
+        <div class="feature fade-in">
+          <i class="fas fa-euro-sign"></i>
+          <h3>Tarifs transparents</h3>
+          <p>Prix fixe annoncé à l'avance, sans surprise ni supplément caché. Paiement par carte bancaire, espèces ou application mobile.</p>
+        </div>
+        
+        <div class="feature fade-in">
+          <i class="fas fa-car"></i>
+          <h3>Véhicules confortables</h3>
+          <p>Flotte moderne, propre et bien entretenue pour votre confort. Véhicules climatisés et équipés pour transporter vos bagages.</p>
+        </div>
+        
+        <div class="feature fade-in">
+          <i class="fas fa-user-tie"></i>
+          <h3>Chauffeurs professionnels</h3>
+          <p>Expérimentés, courtois et connaissant parfaitement la région. Formés pour vous offrir un service de qualité supérieure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="toulouse" class="toulouse-section">
+      <h2>Découvrez Toulouse avec nos services</h2>
+      <div class="toulouse-container">
+        <div class="toulouse-image fade-in">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Toulouse_Capitole_Night_Wikimedia_Commons.jpg/1200px-Toulouse_Capitole_Night_Wikimedia_Commons.jpg" alt="Place du Capitole de Toulouse la nuit" class="capitole-image">
+          <p class="image-caption">La magnifique Place du Capitole illuminée la nuit</p>
+        </div>
+        <div class="toulouse-content fade-in">
+          <h3>La Ville Rose vous attend</h3>
+          <p>
+            Toulouse, surnommée "La Ville Rose" en raison de ses bâtiments en briques roses caractéristiques, est une métropole dynamique 
+            du sud-ouest de la France. Riche en patrimoine historique et culturel, elle abrite la basilique Saint-Sernin, 
+            la Place du Capitole et le couvent des Jacobins.
+          </p>
+          <p>
+            Centre européen de l'aéronautique et de l'espace, Toulouse accueille le siège d'Airbus et la Cité de l'Espace. 
+            Nos chauffeurs peuvent vous emmener visiter ces sites emblématiques ainsi que les nombreux musées, jardins et 
+            restaurants gastronomiques qui font la renommée de notre belle cité.
+          </p>
+          <h4>Points d'intérêt populaires :</h4>
+          <ul class="toulouse-highlights">
+            <li><i class="fas fa-landmark"></i> Place du Capitole</li>
+            <li><i class="fas fa-church"></i> Basilique Saint-Sernin</li>
+            <li><i class="fas fa-rocket"></i> Cité de l'Espace</li>
+            <li><i class="fas fa-plane"></i> Musée Aeroscopia</li>
+            <li><i class="fas fa-utensils"></i> Les Marchés Victor Hugo</li>
+            <li><i class="fas fa-water"></i> Les berges de la Garonne</li>
+          </ul>
+          <p class="toulouse-cta">
+            Découvrez Toulouse à votre rythme ! Nos chauffeurs peuvent organiser des circuits touristiques personnalisés.
+            <a href="#contact" class="toulouse-link">Contactez-nous pour en savoir plus</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <div class="contact-container">
+        <div class="contact-info fade-in">
+          <h3>Nos coordonnées</h3>
+          <div class="contact-method">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Téléphone</h4>
+              <p><a href="tel:+33600000000">06 00 00 00 00</a></p>
+              <p><small>Disponible 24h/24 - 7j/7</small></p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:contact@taxi-michel.fr">contact@taxi-michel.fr</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Adresse</h4>
+              <p>1 Rue de Toulouse, 31000 Toulouse</p>
+            </div>
+          </div>
+          
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-map fade-in">
+          <h3>Nous trouver</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92456.74230388695!2d1.3628267562500002!3d43.60080800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6fec7552ff%3A0x406f69c2f411030!2sToulouse!5e0!3m2!1sfr!2sfr!4v1618308888889!5m2!1sfr!2sfr" width="100%" height="300" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h3>Besoin d'un taxi immédiatement ?</h3>
+      <p>Notre équipe est disponible 24h/24 et 7j/7 pour répondre à vos besoins de transport en ville, à l'aéroport ou pour tout autre déplacement.</p>
+      <div class="cta-buttons">
+        <a href="tel:+33600000000" class="btn"><i class="fas fa-phone"></i> Appelez maintenant</a>
+        <a href="#services" class="btn btn-outline"><i class="fas fa-info-circle"></i> Nos services</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Taxi Michel</h4>
+        <p>Service de taxi professionnel à Toulouse et sa région. Disponible 24h/24 et 7j/7 pour tous vos déplacements personnels et professionnels.</p>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Transfert aéroport</a></li>
+          <li><a href="#services">Courses en ville</a></li>
+          <li><a href="#services">Transport longue distance</a></li>
+          <li><a href="#toulouse">Visites touristiques</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> <a href="tel:+33600000000">06 00 00 00 00</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:contact@taxi-michel.fr">contact@taxi-michel.fr</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> 1 Rue de Toulouse, 31000 Toulouse</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Conditions générales</a></li>
+          <li><a href="#">Plan du site</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>© 2025 Taxi Michel – Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
